@@ -1,4 +1,6 @@
+import React from "react";
 import './App.css';
+import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
 
 import Header from './components/Header';
 import About from './pages/About';
@@ -15,12 +17,13 @@ const App = () => {
       <div id='particles-js'>
         <Background />
       </div>
-      <Header />
-      <About />
-      <Skills />
-      <Achievements />
-      <Projects />
-      <Contact />
+      <ParallaxProvider>
+        <Header />
+        <About />
+        <Skills />
+        <Achievements />
+        <Projects />
+      </ParallaxProvider>
       <Footer />
     </div>
   )};

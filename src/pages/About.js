@@ -2,6 +2,7 @@ import React from "react";
 
 import details from '../details';
 import Card from "../components/Card";
+import ParallaxWrapper from "./ParallaxWrapper";
 
 const About = () => {
     const aboutText = {
@@ -19,18 +20,20 @@ const About = () => {
       }
 
     return (
-        <Card
-            height="40%"
-            width="50%"
-            title="About"
-        >
-            <div style={containerStyles}>
-                <div style={aboutText}>
-                    {details.aboutText}
+        <ParallaxWrapper>
+            <Card
+                height="40%"
+                width="50%"
+                title="About"
+            >
+                <div style={containerStyles}>
+                    <div style={aboutText}>
+                        {details.aboutText}
+                    </div>
                 </div>
-            </div>
-            
-        </Card>
+                
+            </Card>
+        </ParallaxWrapper>
     )
 };
 

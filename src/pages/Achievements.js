@@ -3,6 +3,7 @@ import React from "react";
 import details from '../details';
 import Card from "../components/Card";
 import Tile from "../components/Tile";
+import ParallaxWrapper from "./ParallaxWrapper";
 
 const containerStyles = {
     backgroundColor: "#e0e0de",
@@ -73,53 +74,59 @@ const Achievements = () => {
     return (
     
     <div>
-        <Card
-            height="40%"
-            width="50%"
-            title="Experience"
-        >
-            <div style={containerStyles}>
-                {details.achievements.experience.map((v,k) => {
-                        return <ExperienceRack
-                            instituteName={v.instituteName}
-                            years={v.years}
-                            role={v.role}
-                            tools={v.tools}
-                            description={v.description}
-                        />
-                })}
-            </div>    
-        </Card>
-        <Card
-            height="40%"
-            width="50%"
-            title="Education"
-        >
-            <div style={containerStyles}>
-                {details.achievements.education.map((v,k) => {
-                return <EducationRack
-                    instituteName={v.instituteName}
-                    studied={v.studied}/>
-                })}
-            </div>
-        </Card>
-        <Card
-            height="40%"
-            width="50%"
-            title="Courses"
-        >
-            <div style={containerStyles}>
-                <div style={{display: "inline-table"}}>
-                    {details.achievements.courses.map((v,k) => {
-                    return <Tile
-                        title={v.courseName}
-                    >
-                        {v.instituteName}
-                    </Tile>
+        <ParallaxWrapper>
+            <Card
+                height="40%"
+                width="50%"
+                title="Experience"
+            >
+                <div style={containerStyles}>
+                    {details.achievements.experience.map((v,k) => {
+                            return <ExperienceRack
+                                instituteName={v.instituteName}
+                                years={v.years}
+                                role={v.role}
+                                tools={v.tools}
+                                description={v.description}
+                            />
+                    })}
+                </div>    
+            </Card>
+        </ParallaxWrapper>
+        <ParallaxWrapper>
+            <Card
+                height="40%"
+                width="50%"
+                title="Education"
+            >
+                <div style={containerStyles}>
+                    {details.achievements.education.map((v,k) => {
+                    return <EducationRack
+                        instituteName={v.instituteName}
+                        studied={v.studied}/>
                     })}
                 </div>
-            </div>  
-        </Card>
+            </Card>
+        </ParallaxWrapper>
+        <ParallaxWrapper>
+            <Card
+                height="40%"
+                width="50%"
+                title="Courses"
+            >
+                <div style={containerStyles}>
+                    <div style={{display: "inline-table"}}>
+                        {details.achievements.courses.map((v,k) => {
+                        return <Tile
+                            title={v.courseName}
+                        >
+                            {v.instituteName}
+                        </Tile>
+                        })}
+                    </div>
+                </div>  
+            </Card>
+        </ParallaxWrapper>
     </div>);
 };
 
