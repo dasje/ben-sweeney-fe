@@ -10,8 +10,9 @@ const Contact = () => {
     const containerStyles = {
         backgroundColor: "#e0e0de",
         borderRadius: 10,
-        margin: 20,
+        margin: 'auto',
         padding: 5,
+        width: '100%'
       }
     const contactStyle = {
         backgroundColor: "#9a031e",

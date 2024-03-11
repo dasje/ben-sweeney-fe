@@ -4,11 +4,16 @@ import Contact from "../pages/Contact";
 
 const Footer = () => {return (
     <div style={{
-        position: "fixed",
-        left: 0,
+        width: '100%',
+        position: 'fixed',
         bottom: 0,
-        right: 0,
         zIndex: 1
+        // position: "fixed",
+        // left: 0,
+        // bottom: 0,
+        // right: 0,
+        // // align: 'center',
+        // zIndex: 1
     }}>
         <Contact />
     </div>

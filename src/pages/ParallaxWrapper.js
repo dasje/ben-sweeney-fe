@@ -3,14 +3,11 @@ import { Parallax } from "react-scroll-parallax";
 
 const ParallaxWrapper = (props) => {
 
-    const [width, setWidth] = useState(window.innerWidth);
-    const [height, setHeight] = useState(window.innerHeight);
-
     return (
-        <div style={{width: width, height: height}}>
+        <div style={{width: '99vw', height: '99vh'}}>
             <Parallax
-                translateX={[`${width/4}px`, `${height/4}px`]}
-                translateY={[`${width/4}px`, `${height/8}px`]}
+                translateX={[0, 0]}
+                translateY={[120, 45]}
                 scale={[0.8, 1]}
                 rotate={[-180, 180]}
                 easing="easeInQuad"

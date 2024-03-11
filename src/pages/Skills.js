@@ -10,22 +10,19 @@ const Skills = () => {
     return (
         <ParallaxWrapper>
             <Card
-                height="40%"
-                width="50%"
-                title="Programming Skills"
-            >
-                {details.programmingLanguageSkills.map((v,k) => {
-                return (
-                    <ParallaxWrapper>
-                        <ProgressBar
-                            key={k}
-                            skillName={v.language}
-                            skillColor={programmingLanguages[v.language]}
-                            completed={v.proficiency}
-                        />
-                    </ParallaxWrapper>
-                )})}
-            </Card>
+            height="40%"
+            width="50%"
+            title="Programming Skills"
+        >
+            {details.programmingLanguageSkills.map((v,k) => {
+            return <ProgressBar
+                key={k}
+                skillName={v.language}
+                skillColor={programmingLanguages[v.language]}
+                completed={v.proficiency}
+            />
+            })}
+        </Card>
         </ParallaxWrapper>
     )
 };

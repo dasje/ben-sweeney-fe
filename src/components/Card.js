@@ -2,7 +2,7 @@ import React from "react";
 import "./Card.module.css";
 
 const Card = (props) => {
-    const { height, width, title } = props;
+    const { height = 100, width = 100, title } = props;
 
     const cardStyle = {
         height: height,
@@ -15,6 +15,7 @@ const Card = (props) => {
         paddingBottom: 20,
         paddingRight: 20,
         paddingTop: 5,
+        margin: 'auto'
     }
 
     const titleStyle = {
