@@ -8,12 +8,6 @@ const Footer = () => {return (
         position: 'fixed',
         bottom: 0,
         zIndex: 1
-        // position: "fixed",
-        // left: 0,
-        // bottom: 0,
-        // right: 0,
-        // // align: 'center',
-        // zIndex: 1
     }}>
         <Contact />
     </div>
