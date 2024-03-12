@@ -2,7 +2,6 @@ import React from "react";
 
 import details from '../details';
 import Card from "../components/Card";
-import Tile from "../components/Tile";
 import githubLogo from "../assets/icons/icons8-github-50.png";
 import linkedInLogo from "../assets/icons/icons8-linkedin-50.png";
 
@@ -29,7 +28,6 @@ const Contact = () => {
         <Card
             height="40%"
             width="50%"
-            title="Contact"
         >
             <div style={containerStyles}>
                 <div style={contactStyle}>
