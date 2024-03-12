@@ -10,7 +10,6 @@ import Background from './components/Background';
 import Achievements from './pages/Achievements';
 import Footer from './components/Footer';
 import Landing from "./components/Landing";
-import Button from "./components/Button";
 import EncryptButton from "./components/ButtonEncrypt";
 
 
