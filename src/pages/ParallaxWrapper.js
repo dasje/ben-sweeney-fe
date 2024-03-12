@@ -7,9 +7,10 @@ const ParallaxWrapper = (props) => {
         <div style={{width: '99vw', height: '99vh'}}>
             <Parallax
                 translateX={[0, 0]}
-                translateY={[120, 45]}
-                scale={[0.8, 1]}
-                rotate={[-180, 180]}
+                translateY={[0, 100]}
+                rotateZ={['turn']}
+                scale={[2, 0.01]}
+                rotate={[0, 0]}
                 easing="easeInQuad"
             >
                 {props.children}
